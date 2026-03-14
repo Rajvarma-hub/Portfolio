@@ -1,223 +1,172 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Thirthala Rajkumar – AI Engineer & Backend Developer Portfolio" />
-  <title>Thirthala Rajkumar · AI Engineer</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Thirthala Rajkumar — AI Engineer & Backend Developer. Building intelligent systems with LLMs, MCP Servers, FastAPI, and AWS."/>
+  <meta name="keywords" content="Thirthala Rajkumar, AI Engineer, Backend Developer, LLM, MCP Servers, FastAPI, Python, Portfolio"/>
+  <meta name="author" content="Thirthala Rajkumar"/>
+  <meta property="og:title" content="Thirthala Rajkumar — AI Engineer"/>
+  <meta property="og:description" content="Building production-grade AI systems. MCP Servers · LLMs · FastAPI · AWS."/>
+  <meta property="og:type" content="website"/>
+  <title>Thirthala Rajkumar — AI Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- ░░ NAVBAR ░░ -->
-<nav id="nav">
-  <div class="nav-wrap">
-    <a href="#" class="nav-brand">
-      <span class="brand-dot"></span>
-      rajkumar
-    </a>
-    <ul class="nav-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Hire Me</a>
-    <button class="nav-hamburger" id="hamburger" aria-label="menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+<div id="cursor"></div>
+<div id="cursor-trail"></div>
 
-<!-- Mobile Drawer -->
-<div class="drawer" id="drawer">
-  <button class="drawer-close" id="drawer-close">✕</button>
-  <a href="#about" class="drawer-link">About</a>
-  <a href="#skills" class="drawer-link">Skills</a>
-  <a href="#projects" class="drawer-link">Projects</a>
-  <a href="#experience" class="drawer-link">Experience</a>
-  <a href="#contact" class="drawer-link">Contact</a>
+<!-- NAVBAR -->
+<header id="header">
+  <div class="header-inner">
+    <a href="#" class="logo"><span class="logo-bracket">&lt;</span>TR<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about" class="nav-a">About</a>
+      <a href="#skills" class="nav-a">Skills</a>
+      <a href="#projects" class="nav-a">Projects</a>
+      <a href="#experience" class="nav-a">Experience</a>
+      <a href="#contact" class="nav-a">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a href="assets/Thirthala_Rajkumar_Resume.pdf" download class="btn-resume">
+        <span>Resume</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#about" class="mob-link">01. About</a>
+  <a href="#skills" class="mob-link">02. Skills</a>
+  <a href="#projects" class="mob-link">03. Projects</a>
+  <a href="#experience" class="mob-link">04. Experience</a>
+  <a href="#contact" class="mob-link">05. Contact</a>
+  <a href="assets/Thirthala_Rajkumar_Resume.pdf" download class="mob-resume">Download Resume</a>
 </div>
-<div class="drawer-overlay" id="drawer-overlay"></div>
 
-<!-- ░░ HERO ░░ -->
+<!-- HERO -->
 <section id="hero">
-  <div class="hero-bg-lines"></div>
-  <div class="hero-orb hero-orb-1"></div>
-  <div class="hero-orb hero-orb-2"></div>
-
-  <div class="container hero-container">
-    <div class="hero-left">
-      <div class="hero-chip">
-        <span class="chip-pulse"></span>
-        Open to Opportunities
-      </div>
-
-      <h1 class="hero-title">
-        <span class="title-sub">Hello, I'm</span>
-        Thirthala<br>
-        <em>Rajkumar</em>
-      </h1>
-
-      <p class="hero-role">
-        AI Engineer <span class="role-sep">·</span>
-        Backend Developer <span class="role-sep">·</span>
-        LLM Architect
-      </p>
-
-      <p class="hero-bio">
-        Building production-grade AI systems — from MCP servers and agentic pipelines
-        to scalable FastAPI backends deployed on AWS. I turn complex problems into
-        elegant, intelligent solutions.
-      </p>
-
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          View Projects
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
-      </div>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">2+</span>
-          <span class="stat-label">AI Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">150+</span>
-          <span class="stat-label">LeetCode</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num">83%</span>
-          <span class="stat-label">B.Tech GPA</span>
-        </div>
-      </div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-tag-row">
+      <span class="hero-tag"><span class="tag-led"></span>Available for hire</span>
+      <span class="hero-tag-mono">B.Tech CSE · LPU Phagwara</span>
     </div>
-
-    <div class="hero-right">
-      <div class="hero-card">
-        <div class="hero-avatar">
-          <div class="avatar-ring"></div>
-          <div class="avatar-inner">
-            <span>TR</span>
-          </div>
-        </div>
-        <div class="hero-card-stack">
-          <div class="stack-tag">
-            <span class="tag-icon">⚡</span> FastAPI
-          </div>
-          <div class="stack-tag">
-            <span class="tag-icon">🤖</span> LangChain
-          </div>
-          <div class="stack-tag">
-            <span class="tag-icon">☁️</span> AWS
-          </div>
-          <div class="stack-tag">
-            <span class="tag-icon">🐳</span> Docker
-          </div>
-        </div>
-        <div class="hero-card-status">
-          <span class="status-led"></span>
-          <span>Currently at LPU · CSE</span>
-        </div>
-      </div>
+    <h1 class="hero-heading">
+      <span class="h-line" data-delay="0"><span class="h-word">Thirthala</span></span>
+      <span class="h-line" data-delay="1"><span class="h-word accent-word">Rajkumar</span></span>
+    </h1>
+    <div class="hero-descriptor">
+      <span class="desc-line">AI Engineer</span>
+      <span class="desc-sep">·</span>
+      <span class="desc-line">Backend Developer</span>
+      <span class="desc-sep">·</span>
+      <span class="desc-line">LLM Architect</span>
+    </div>
+    <p class="hero-sub">
+      I build production-grade AI systems — <em>MCP Servers, agentic pipelines,
+      event-driven backends</em> — that handle real load, shipped with real infrastructure.
+    </p>
+    <div class="hero-cta-row">
+      <a href="#projects" class="cta-primary">See My Work <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="cta-outline">Get In Touch</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric-block"><span class="m-val" data-count="25">0</span><span class="m-unit">+</span><span class="m-label">REST APIs Built</span></div>
+      <div class="metric-sep"></div>
+      <div class="metric-block"><span class="m-val" data-count="150">0</span><span class="m-unit">+</span><span class="m-label">LeetCode Solved</span></div>
+      <div class="metric-sep"></div>
+      <div class="metric-block"><span class="m-val" data-count="100">0</span><span class="m-unit">+</span><span class="m-label">Kafka Events/min</span></div>
+      <div class="metric-sep"></div>
+      <div class="metric-block"><span class="m-val" data-count="300">0</span><span class="m-unit">ms</span><span class="m-label">API Response Time</span></div>
     </div>
   </div>
-
-  <div class="scroll-cue">
-    <div class="scroll-mouse">
-      <div class="scroll-wheel"></div>
-    </div>
-    <span>scroll</span>
+  <div class="hero-scroll-line">
+    <div class="scroll-track"><div class="scroll-thumb"></div></div>
+    <span class="scroll-label">scroll</span>
   </div>
 </section>
 
-<!-- ░░ ABOUT ░░ -->
-<section id="about">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">01 / About</span>
-      <h2 class="section-title">Who I Am</h2>
-    </div>
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>FastAPI</span><span class="t-dot">✦</span><span>LangChain</span><span class="t-dot">✦</span>
+    <span>MCP Servers</span><span class="t-dot">✦</span><span>Agentic AI</span><span class="t-dot">✦</span>
+    <span>Kafka</span><span class="t-dot">✦</span><span>PostgreSQL</span><span class="t-dot">✦</span>
+    <span>Docker</span><span class="t-dot">✦</span><span>AWS EC2</span><span class="t-dot">✦</span>
+    <span>LLMs</span><span class="t-dot">✦</span><span>RAG</span><span class="t-dot">✦</span>
+    <span>Redis</span><span class="t-dot">✦</span><span>WebSockets</span><span class="t-dot">✦</span>
+    <span>TensorFlow</span><span class="t-dot">✦</span><span>Gemini 2.5</span><span class="t-dot">✦</span>
+    <span>MLflow</span><span class="t-dot">✦</span><span>ZenML</span><span class="t-dot">✦</span>
+    <span>FastAPI</span><span class="t-dot">✦</span><span>LangChain</span><span class="t-dot">✦</span>
+    <span>MCP Servers</span><span class="t-dot">✦</span><span>Agentic AI</span><span class="t-dot">✦</span>
+    <span>Kafka</span><span class="t-dot">✦</span><span>PostgreSQL</span><span class="t-dot">✦</span>
+    <span>Docker</span><span class="t-dot">✦</span><span>AWS EC2</span><span class="t-dot">✦</span>
+    <span>LLMs</span><span class="t-dot">✦</span><span>RAG</span><span class="t-dot">✦</span>
+    <span>Redis</span><span class="t-dot">✦</span><span>WebSockets</span><span class="t-dot">✦</span>
+    <span>TensorFlow</span><span class="t-dot">✦</span><span>Gemini 2.5</span><span class="t-dot">✦</span>
+    <span>MLflow</span><span class="t-dot">✦</span><span>ZenML</span><span class="t-dot">✦</span>
+  </div>
+</div>
 
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>
-          I'm a <strong>Computer Science student at LPU</strong> with a deep focus on building
-          AI-powered backend systems. My expertise spans LLM pipelines, Agentic AI, MCP Servers,
-          and production-grade APIs.
-        </p>
-        <p>
-          I've built platforms that handle <strong>100+ Kafka events per minute</strong>, AI agents that
-          perform 10+ financial tasks end-to-end through conversation, and containerized systems
-          deployed on AWS with real-time WebSocket sync.
-        </p>
-        <p>
-          I believe the best engineers ship products, not just code. Every project I build
-          is designed for scale, maintainability, and real-world impact.
-        </p>
-        <div class="about-links">
-          <a href="mailto:rajkumarthirthala@gmail.com" class="about-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
-            rajkumarthirthala@gmail.com
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label reveal">
+      <span class="label-num">01</span><span class="label-line"></span><span class="label-text">About Me</span>
+    </div>
+    <div class="about-layout">
+      <div class="about-left reveal">
+        <h2 class="section-heading">Turning complex problems<br>into <em>intelligent solutions</em></h2>
+        <p class="about-p">I'm <strong>Thirthala Rajkumar</strong>, a CSE student at <strong>Lovely Professional University</strong> building at the intersection of AI research and production engineering. My focus: designing systems that are actually smart — not just demos.</p>
+        <p class="about-p">From a custom <strong>MCP Server</strong> that lets users manage jobs via natural language, to a Kafka-powered backend processing 100+ events/minute, I ship systems built for the real world. Sub-300ms API responses. AWS-deployed. Docker-containerized.</p>
+        <p class="about-p">When I'm not building, I'm sharpening DSA on LeetCode or exploring the latest research in agentic AI and LLM tool-use. <strong>I believe in shipping, not just learning.</strong></p>
+        <div class="about-socials">
+          <a href="mailto:rajkumarthirthala@gmail.com" class="social-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>Email
           </a>
-          <a href="https://github.com/Rajvarma-hub" target="_blank" class="about-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            Rajvarma-hub
+          <a href="https://github.com/Rajvarma-hub" target="_blank" class="social-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
           </a>
-          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="about-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            thirthala-rajkumar
+          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="social-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
           </a>
         </div>
       </div>
-
-      <div class="about-edu reveal">
-        <h3 class="edu-heading">Education</h3>
-        <div class="edu-timeline">
-          <div class="edu-item">
-            <div class="edu-dot"></div>
-            <div class="edu-content">
-              <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
-              <div class="edu-school">Lovely Professional University, Phagwara</div>
-              <div class="edu-meta">
-                <span class="edu-score">83%</span>
-                <span>Aug 2024 – Present</span>
-              </div>
-            </div>
+      <div class="about-right reveal">
+        <div class="avatar-card">
+          <div class="avatar-glow"></div>
+          <div class="avatar-circle">
+            <div class="avatar-ring-1"></div>
+            <div class="avatar-ring-2"></div>
+            <span class="avatar-initials">TR</span>
           </div>
-          <div class="edu-item">
-            <div class="edu-dot"></div>
-            <div class="edu-content">
-              <div class="edu-degree">Diploma — Computer Science & Engineering</div>
-              <div class="edu-school">Abul Kalam Institute of Technological Sciences</div>
-              <div class="edu-meta">
-                <span class="edu-score">91%</span>
-                <span>Jun 2021 – May 2024</span>
-              </div>
-            </div>
+          <span class="av-name">Thirthala Rajkumar</span>
+          <span class="av-role">AI Engineer · Backend Dev</span>
+          <div class="av-status"><span class="av-led"></span>Open to opportunities</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-card-label">Education</div>
+          <div class="edu-entry">
+            <div class="edu-icon">🎓</div>
+            <div><div class="edu-title">B.Tech — CSE</div><div class="edu-school">Lovely Professional University</div><div class="edu-row"><span class="edu-score">83%</span><span class="edu-yr">2024 – Present</span></div></div>
           </div>
-          <div class="edu-item">
-            <div class="edu-dot"></div>
-            <div class="edu-content">
-              <div class="edu-degree">High School</div>
-              <div class="edu-school">ZPHS (Boys), Peddapalli, Telangana</div>
-              <div class="edu-meta">
-                <span class="edu-score">95%</span>
-                <span>Jun 2020 – Apr 2021</span>
-              </div>
-            </div>
+          <div class="edu-entry">
+            <div class="edu-icon">📘</div>
+            <div><div class="edu-title">Diploma — CSE</div><div class="edu-school">Abul Kalam Institute of Tech</div><div class="edu-row"><span class="edu-score">91%</span><span class="edu-yr">2021 – 2024</span></div></div>
+          </div>
+          <div class="edu-entry">
+            <div class="edu-icon">🏫</div>
+            <div><div class="edu-title">High School</div><div class="edu-school">ZPHS Boys, Peddapalli</div><div class="edu-row"><span class="edu-score">95%</span><span class="edu-yr">2020 – 2021</span></div></div>
           </div>
         </div>
       </div>
@@ -225,406 +174,247 @@
   </div>
 </section>
 
-<!-- ░░ SKILLS ░░ -->
-<section id="skills">
+<!-- SKILLS -->
+<section id="skills" class="section section-alt">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">02 / Skills</span>
-      <h2 class="section-title">Tech Stack</h2>
+    <div class="section-label reveal">
+      <span class="label-num">02</span><span class="label-line"></span><span class="label-text">Skills</span>
+    </div>
+    <h2 class="section-heading reveal">Tech I Build With</h2>
+    <div class="skills-bento">
+      <div class="skill-tile tile-wide reveal" data-color="#00e5ff">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">⌨️</span><span class="tile-category">Languages</span></div>
+        <div class="tile-tags"><span class="stag">Python</span><span class="stag">C++</span><span class="stag">Java</span><span class="stag">SQL</span></div>
+      </div>
+      <div class="skill-tile reveal" data-color="#a855f7">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">🧠</span><span class="tile-category">AI / ML / DL</span></div>
+        <div class="tile-tags"><span class="stag">TensorFlow</span><span class="stag">Keras</span><span class="stag">Scikit-learn</span><span class="stag">CNNs</span><span class="stag">NLP</span><span class="stag">LLMs</span><span class="stag">RAG</span></div>
+      </div>
+      <div class="skill-tile reveal" data-color="#22d3ee">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">🤖</span><span class="tile-category">Agentic AI</span></div>
+        <div class="tile-tags"><span class="stag">LangChain</span><span class="stag">MCP Servers</span><span class="stag">Agentic AI</span><span class="stag">Tool Use</span><span class="stag">Gemini 2.5</span></div>
+      </div>
+      <div class="skill-tile tile-wide reveal" data-color="#10b981">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">⚡</span><span class="tile-category">Backend & Infra</span></div>
+        <div class="tile-tags"><span class="stag">FastAPI</span><span class="stag">PostgreSQL</span><span class="stag">MySQL</span><span class="stag">Kafka</span><span class="stag">Redis</span><span class="stag">WebSockets</span><span class="stag">OAuth2</span><span class="stag">JWT</span><span class="stag">SQLAlchemy</span><span class="stag">PySpark</span></div>
+      </div>
+      <div class="skill-tile reveal" data-color="#f59e0b">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">☁️</span><span class="tile-category">Cloud & MLOps</span></div>
+        <div class="tile-tags"><span class="stag">AWS EC2</span><span class="stag">AWS S3</span><span class="stag">AWS RDS</span><span class="stag">Docker</span><span class="stag">MLflow</span><span class="stag">ZenML</span><span class="stag">Linux</span></div>
+      </div>
+      <div class="skill-tile reveal" data-color="#f472b6">
+        <div class="tile-glow"></div>
+        <div class="tile-header"><span class="tile-icon">📊</span><span class="tile-category">Data Science</span></div>
+        <div class="tile-tags"><span class="stag">NumPy</span><span class="stag">Pandas</span><span class="stag">Matplotlib</span><span class="stag">Seaborn</span><span class="stag">Power BI</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-label reveal">
+      <span class="label-num">03</span><span class="label-line"></span><span class="label-text">Projects</span>
+    </div>
+    <h2 class="section-heading reveal">Featured Work</h2>
+
+    <div class="project-row reveal">
+      <div class="proj-left">
+        <div class="proj-num">01</div>
+        <div class="proj-visual">
+          <div class="proj-emoji-wrap">🏠</div>
+          <div class="proj-gradient g1"></div>
+        </div>
+      </div>
+      <div class="proj-right">
+        <div class="proj-top-row">
+          <span class="proj-badge">Backend Platform</span>
+          <div class="proj-link-btns">
+            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="proj-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
+            </a>
+            <a href="#" class="proj-icon-btn proj-icon-btn-live">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live
+            </a>
+          </div>
+        </div>
+        <h3 class="proj-title">FixEasy</h3>
+        <p class="proj-tagline">On-Demand Home Services Platform</p>
+        <p class="proj-desc">Production FastAPI backend with <strong>3 distinct roles</strong> and <strong>25+ REST APIs</strong>. Event-driven architecture via Kafka processes <strong>100+ job events/minute</strong>. Custom MCP server with embedded AI agent for natural language job management. Real-time sync via WebSockets, Redis OTP, containerized on AWS.</p>
+        <div class="proj-kpis">
+          <div class="kpi"><span class="kpi-val">25+</span><span class="kpi-l">APIs</span></div>
+          <div class="kpi"><span class="kpi-val">100+</span><span class="kpi-l">Events/min</span></div>
+          <div class="kpi"><span class="kpi-val">3</span><span class="kpi-l">User Roles</span></div>
+        </div>
+        <div class="proj-stack">
+          <span class="s-tag">Python</span><span class="s-tag">FastAPI</span><span class="s-tag">Kafka</span>
+          <span class="s-tag">PostgreSQL</span><span class="s-tag">Redis</span><span class="s-tag">WebSockets</span>
+          <span class="s-tag">OAuth2</span><span class="s-tag">JWT</span><span class="s-tag">Docker</span>
+          <span class="s-tag">AWS</span><span class="s-tag">MCP Server</span>
+        </div>
+      </div>
     </div>
 
-    <div class="skills-grid">
-      <div class="skill-card reveal" style="--accent-clr: #f59e0b">
-        <div class="skill-card-icon">⌨️</div>
-        <h3 class="skill-card-title">Languages</h3>
-        <div class="skill-pills">
-          <span class="pill">Python</span>
-          <span class="pill">C++</span>
-          <span class="pill">Java</span>
-          <span class="pill">SQL</span>
+    <div class="proj-divider"></div>
+
+    <div class="project-row reveal">
+      <div class="proj-left">
+        <div class="proj-num">02</div>
+        <div class="proj-visual">
+          <div class="proj-emoji-wrap">💰</div>
+          <div class="proj-gradient g2"></div>
         </div>
       </div>
-      <div class="skill-card reveal" style="--accent-clr: #8b5cf6">
-        <div class="skill-card-icon">🤖</div>
-        <h3 class="skill-card-title">AI & ML</h3>
-        <div class="skill-pills">
-          <span class="pill">TensorFlow</span>
-          <span class="pill">Scikit-learn</span>
-          <span class="pill">LangChain</span>
-          <span class="pill">RAG</span>
-          <span class="pill">LLMs</span>
-          <span class="pill">CNNs</span>
-          <span class="pill">NLP</span>
+      <div class="proj-right">
+        <div class="proj-top-row">
+          <span class="proj-badge">AI · LLM</span>
+          <div class="proj-link-btns">
+            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="proj-icon-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>GitHub
+            </a>
+            <a href="#" class="proj-icon-btn proj-icon-btn-live">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="skill-card reveal" style="--accent-clr: #10b981">
-        <div class="skill-card-icon">⚡</div>
-        <h3 class="skill-card-title">Backend</h3>
-        <div class="skill-pills">
-          <span class="pill">FastAPI</span>
-          <span class="pill">PostgreSQL</span>
-          <span class="pill">Kafka</span>
-          <span class="pill">Redis</span>
-          <span class="pill">WebSockets</span>
-          <span class="pill">OAuth2</span>
-          <span class="pill">JWT</span>
+        <h3 class="proj-title">AI Expense Chatbot</h3>
+        <p class="proj-tagline">Conversational Finance Management System</p>
+        <p class="proj-desc">AI-driven expense platform supporting <strong>1,000+ records per user</strong> via natural chat. Custom MCP server orchestrates LLM context, memory, and tool invocation — <strong>10+ financial tasks end-to-end</strong>. LangChain + Gemini 2.5 Flash with <strong>sub-300ms response times</strong>.</p>
+        <div class="proj-kpis">
+          <div class="kpi"><span class="kpi-val">1K+</span><span class="kpi-l">Records/user</span></div>
+          <div class="kpi"><span class="kpi-val">&lt;300ms</span><span class="kpi-l">Response</span></div>
+          <div class="kpi"><span class="kpi-val">10+</span><span class="kpi-l">AI Tasks</span></div>
         </div>
-      </div>
-      <div class="skill-card reveal" style="--accent-clr: #f472b6">
-        <div class="skill-card-icon">🧠</div>
-        <h3 class="skill-card-title">Agentic AI</h3>
-        <div class="skill-pills">
-          <span class="pill">MCP Servers</span>
-          <span class="pill">Agentic AI</span>
-          <span class="pill">Tool Use</span>
-          <span class="pill">Gemini 2.5</span>
-          <span class="pill">Memory Pipelines</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="--accent-clr: #38bdf8">
-        <div class="skill-card-icon">☁️</div>
-        <h3 class="skill-card-title">Cloud & DevOps</h3>
-        <div class="skill-pills">
-          <span class="pill">AWS EC2</span>
-          <span class="pill">AWS S3</span>
-          <span class="pill">AWS RDS</span>
-          <span class="pill">Docker</span>
-          <span class="pill">MLflow</span>
-          <span class="pill">ZenML</span>
-          <span class="pill">Linux</span>
-        </div>
-      </div>
-      <div class="skill-card reveal" style="--accent-clr: #fb923c">
-        <div class="skill-card-icon">📊</div>
-        <h3 class="skill-card-title">Data Science</h3>
-        <div class="skill-pills">
-          <span class="pill">NumPy</span>
-          <span class="pill">Pandas</span>
-          <span class="pill">Matplotlib</span>
-          <span class="pill">Seaborn</span>
-          <span class="pill">Power BI</span>
-          <span class="pill">PySpark</span>
+        <div class="proj-stack">
+          <span class="s-tag">LangChain</span><span class="s-tag">Gemini 2.5</span>
+          <span class="s-tag">FastAPI</span><span class="s-tag">PostgreSQL</span>
+          <span class="s-tag">MCP Server</span><span class="s-tag">OAuth2</span>
+          <span class="s-tag">JWT</span><span class="s-tag">Python</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ░░ PROJECTS ░░ -->
-<section id="projects">
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-alt">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">03 / Projects</span>
-      <h2 class="section-title">Featured Work</h2>
+    <div class="section-label reveal">
+      <span class="label-num">04</span><span class="label-line"></span><span class="label-text">Experience</span>
     </div>
-
-    <div class="projects-grid">
-
-      <!-- Project 1 -->
-      <article class="project-card reveal project-featured">
-        <div class="project-card-top">
-          <div class="project-number">01</div>
-          <div class="project-links-top">
-            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="icon-btn" title="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-            <a href="#" class="icon-btn" title="Live Demo">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-emoji">🏠</div>
-        <h3 class="project-title">FixEasy</h3>
-        <p class="project-subtitle">On-Demand Home Services Platform</p>
-        <p class="project-desc">
-          Production FastAPI backend with 3 roles & 25+ REST APIs. Event-driven via Kafka processing
-          100+ job events/min. Custom MCP server with AI agent for natural language job management.
-          WebSocket real-time sync + Redis OTP + AWS deployment.
-        </p>
-        <div class="project-metrics">
-          <span class="metric"><strong>100+</strong> events/min</span>
-          <span class="metric"><strong>25+</strong> REST APIs</span>
-          <span class="metric"><strong>3</strong> user roles</span>
-        </div>
-        <div class="project-tech">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">FastAPI</span>
-          <span class="tech-badge">Kafka</span>
-          <span class="tech-badge">PostgreSQL</span>
-          <span class="tech-badge">Redis</span>
-          <span class="tech-badge">Docker</span>
-          <span class="tech-badge">AWS</span>
-          <span class="tech-badge">MCP</span>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card reveal project-featured">
-        <div class="project-card-top">
-          <div class="project-number">02</div>
-          <div class="project-links-top">
-            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="icon-btn" title="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-            <a href="#" class="icon-btn" title="Live Demo">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="project-emoji">💰</div>
-        <h3 class="project-title">AI Expense Chatbot</h3>
-        <p class="project-subtitle">Conversational Finance Management</p>
-        <p class="project-desc">
-          AI-driven expense platform supporting 1,000+ records via chat. Custom MCP server
-          orchestrates LLM context, memory & 10+ financial tasks. LangChain + Gemini 2.5 Flash
-          with sub-300ms responses and personalized financial insights.
-        </p>
-        <div class="project-metrics">
-          <span class="metric"><strong>1,000+</strong> records/user</span>
-          <span class="metric"><strong>&lt;300ms</strong> response</span>
-          <span class="metric"><strong>10+</strong> AI tasks</span>
-        </div>
-        <div class="project-tech">
-          <span class="tech-badge">LangChain</span>
-          <span class="tech-badge">Gemini 2.5</span>
-          <span class="tech-badge">FastAPI</span>
-          <span class="tech-badge">PostgreSQL</span>
-          <span class="tech-badge">MCP</span>
-          <span class="tech-badge">OAuth2</span>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ░░ EXPERIENCE ░░ -->
-<section id="experience">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">04 / Experience</span>
-      <h2 class="section-title">Background</h2>
-    </div>
-
-    <div class="exp-layout">
-      <!-- Internship -->
-      <div class="exp-card reveal exp-primary">
-        <div class="exp-badge internship">Internship</div>
-        <div class="exp-card-icon">🏢</div>
-        <h3 class="exp-title">AICTE Virtual Internship</h3>
-        <div class="exp-org">Artificial Intelligence & Data Analytics</div>
-        <div class="exp-date">Apr 2025</div>
-        <p class="exp-desc">Applied ML and data analysis using Python on sustainability problems. Processed datasets with Pandas, NumPy and Matplotlib. Produced Excel reports with data-driven recommendations.</p>
-        <div class="exp-tech">
-          <span class="pill-sm">Python</span>
-          <span class="pill-sm">Pandas</span>
-          <span class="pill-sm">NumPy</span>
-          <span class="pill-sm">Matplotlib</span>
-          <span class="pill-sm">Excel</span>
-        </div>
+    <h2 class="section-heading reveal">Background</h2>
+    <div class="exp-grid">
+      <div class="exp-card reveal ec-featured">
+        <div class="ec-header"><span class="ec-type ec-intern">Internship</span><span class="ec-date">Apr 2025</span></div>
+        <div class="ec-icon">🏢</div>
+        <h3 class="ec-title">AICTE Virtual Internship</h3>
+        <p class="ec-org">Artificial Intelligence & Data Analytics</p>
+        <p class="ec-desc">Applied ML and data analysis on sustainability problems. Processed datasets with Pandas, NumPy, Matplotlib. Delivered Excel-based recommendations.</p>
+        <div class="ec-tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Excel</span></div>
       </div>
-
-      <!-- Certs -->
       <div class="exp-card reveal">
-        <div class="exp-badge certifications">Certifications</div>
-        <div class="exp-card-icon">📜</div>
-        <h3 class="exp-title">Certifications</h3>
-        <ul class="cert-list">
-          <li>
-            <span class="cert-dot"></span>
-            <div>
-              <strong>Privacy & Security in Online Social Media</strong>
-              <span class="cert-org">NPTEL · Nov 2025</span>
-            </div>
-          </li>
-          <li>
-            <span class="cert-dot"></span>
-            <div>
-              <strong>Deep Learning Course Training</strong>
-              <span class="cert-org">Scaler · Sep 2025</span>
-            </div>
-          </li>
-          <li>
-            <span class="cert-dot"></span>
-            <div>
-              <strong>AI-Powered NLP & LLM Training</strong>
-              <span class="cert-org">AlgoTutor Academy · Aug 2025</span>
-            </div>
-          </li>
-          <li>
-            <span class="cert-dot"></span>
-            <div>
-              <strong>Java Programming</strong>
-              <span class="cert-org">LPU · Jan–May 2025</span>
-            </div>
-          </li>
+        <div class="ec-header"><span class="ec-type ec-cert">Certifications</span></div>
+        <div class="ec-icon">📜</div>
+        <h3 class="ec-title">Certifications</h3>
+        <ul class="cert-items">
+          <li><span class="ci-dot" style="--c:#a855f7"></span><div class="ci-body"><span class="ci-name">Privacy &amp; Security in Online Social Media</span><span class="ci-org">NPTEL · Nov 2025</span></div></li>
+          <li><span class="ci-dot" style="--c:#00e5ff"></span><div class="ci-body"><span class="ci-name">Deep Learning Course Training</span><span class="ci-org">Scaler · Sep 2025</span></div></li>
+          <li><span class="ci-dot" style="--c:#10b981"></span><div class="ci-body"><span class="ci-name">AI-Powered NLP &amp; LLM Training</span><span class="ci-org">AlgoTutor Academy · Aug 2025</span></div></li>
+          <li><span class="ci-dot" style="--c:#f59e0b"></span><div class="ci-body"><span class="ci-name">Java Programming</span><span class="ci-org">LPU · Jan – May 2025</span></div></li>
         </ul>
       </div>
-
-      <!-- Achievements -->
       <div class="exp-card reveal">
-        <div class="exp-badge achievement">Achievement</div>
-        <div class="exp-card-icon">🏆</div>
-        <h3 class="exp-title">Competitive Coding</h3>
-        <div class="exp-date">Dec 2025</div>
-        <p class="exp-desc">Consistently solving DSA problems to sharpen algorithmic thinking.</p>
-        <div class="achieve-stat">
-          <span class="achieve-num">150+</span>
-          <span class="achieve-label">LeetCode Problems Solved</span>
-        </div>
+        <div class="ec-header"><span class="ec-type ec-achieve">Achievement</span><span class="ec-date">Dec 2025</span></div>
+        <div class="ec-icon">🏆</div>
+        <h3 class="ec-title">Competitive Coding</h3>
+        <p class="ec-org">LeetCode · DSA Practice</p>
+        <p class="ec-desc">Consistent algorithmic problem solving across arrays, trees, graphs, and dynamic programming.</p>
+        <div class="lc-badge"><span class="lc-num">150+</span><span class="lc-label">Problems Solved</span></div>
       </div>
+    </div>
+
+    <div class="gh-section reveal">
+      <div class="gh-label">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub Stats
+      </div>
+      <div class="gh-cards">
+        <div class="gh-img-wrap"><img src="https://github-readme-stats.vercel.app/api?username=Rajvarma-hub&show_icons=true&theme=transparent&bg_color=0d1117&border_color=1e2a38&title_color=00e5ff&icon_color=00e5ff&text_color=8b9ab0" alt="GitHub Stats" loading="lazy" onerror="this.parentElement.innerHTML='<div class=gh-fallback>📊 View on GitHub</div>'"/></div>
+        <div class="gh-img-wrap"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajvarma-hub&layout=compact&theme=transparent&bg_color=0d1117&border_color=1e2a38&title_color=00e5ff&text_color=8b9ab0" alt="Top Languages" loading="lazy" onerror="this.parentElement.innerHTML='<div class=gh-fallback>📈 Top Languages</div>'"/></div>
+      </div>
+      <a href="https://github.com/Rajvarma-hub" target="_blank" class="gh-profile-btn">View Full Profile on GitHub <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </div>
   </div>
 </section>
 
-<!-- ░░ CONTACT ░░ -->
-<section id="contact">
+<!-- CONTACT -->
+<section id="contact" class="section">
   <div class="container">
-    <div class="section-header reveal">
-      <span class="section-eyebrow">05 / Contact</span>
-      <h2 class="section-title">Let's Connect</h2>
+    <div class="section-label reveal">
+      <span class="label-num">05</span><span class="label-line"></span><span class="label-text">Contact</span>
     </div>
-
-    <div class="contact-layout reveal">
-      <div class="contact-left">
-        <p class="contact-intro">
-          I'm actively seeking internships and full-time roles in AI engineering and backend development.
-          Have a project, an opportunity, or just want to say hi? My inbox is always open.
-        </p>
-
-        <div class="contact-cards">
-          <a href="mailto:rajkumarthirthala@gmail.com" class="contact-card">
-            <div class="cc-icon">✉️</div>
-            <div class="cc-text">
-              <span class="cc-label">Email</span>
-              <span class="cc-value">rajkumarthirthala@gmail.com</span>
-            </div>
-            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="contact-layout">
+      <div class="contact-left reveal">
+        <h2 class="section-heading">Let's build<br><em>something great</em></h2>
+        <p class="contact-body">Actively seeking internships and full-time roles in AI engineering and backend development. Got a project, opportunity, or just want to connect? I reply within 24 hours.</p>
+        <div class="contact-items">
+          <a href="mailto:rajkumarthirthala@gmail.com" class="ci-link">
+            <div class="ci-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg></div>
+            <div class="ci-details"><span class="ci-lbl">Email</span><span class="ci-val">rajkumarthirthala@gmail.com</span></div>
+            <svg class="ci-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="contact-card">
-            <div class="cc-icon">💼</div>
-            <div class="cc-text">
-              <span class="cc-label">LinkedIn</span>
-              <span class="cc-value">thirthala-rajkumar</span>
-            </div>
-            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="ci-link">
+            <div class="ci-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+            <div class="ci-details"><span class="ci-lbl">LinkedIn</span><span class="ci-val">thirthala-rajkumar</span></div>
+            <svg class="ci-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="https://github.com/Rajvarma-hub" target="_blank" class="contact-card">
-            <div class="cc-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </div>
-            <div class="cc-text">
-              <span class="cc-label">GitHub</span>
-              <span class="cc-value">Rajvarma-hub</span>
-            </div>
-            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="https://github.com/Rajvarma-hub" target="_blank" class="ci-link">
+            <div class="ci-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></div>
+            <div class="ci-details"><span class="ci-lbl">GitHub</span><span class="ci-val">Rajvarma-hub</span></div>
+            <svg class="ci-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="tel:+916301597150" class="contact-card">
-            <div class="cc-icon">📱</div>
-            <div class="cc-text">
-              <span class="cc-label">Phone</span>
-              <span class="cc-value">+91 6301597150</span>
-            </div>
-            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="tel:+916301597150" class="ci-link">
+            <div class="ci-icon-wrap"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l1.48-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="ci-details"><span class="ci-lbl">Phone</span><span class="ci-val">+91 6301597150</span></div>
+            <svg class="ci-arr" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </div>
-
-      <form class="contact-form" id="contact-form">
+      <form class="contact-form reveal" id="contact-form" novalidate>
         <div class="form-row">
-          <div class="form-field">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name" required />
-          </div>
-          <div class="form-field">
-            <label for="femail">Email</label>
-            <input type="email" id="femail" name="email" placeholder="you@email.com" required />
-          </div>
+          <div class="form-grp"><label for="f-name">Name</label><input type="text" id="f-name" name="name" placeholder="Your name" required/></div>
+          <div class="form-grp"><label for="f-email">Email</label><input type="email" id="f-email" name="email" placeholder="you@email.com" required/></div>
         </div>
-        <div class="form-field">
-          <label for="fsubject">Subject</label>
-          <input type="text" id="fsubject" name="subject" placeholder="What's this about?" />
-        </div>
-        <div class="form-field">
-          <label for="fmessage">Message</label>
-          <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">
-          Send Message
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <div class="form-grp"><label for="f-subject">Subject</label><input type="text" id="f-subject" name="subject" placeholder="Internship / Collaboration / Project"/></div>
+        <div class="form-grp"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea></div>
+        <button type="submit" class="form-submit" id="form-submit">
+          <span id="submit-text">Send Message</span>
+          <svg id="submit-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ░░ FOOTER ░░ -->
-<footer>
+<!-- FOOTER -->
+<footer id="footer">
   <div class="container footer-inner">
-    <span class="footer-brand">Thirthala Rajkumar</span>
-    <span class="footer-copy">© 2026 · Built with pure HTML & CSS</span>
-    <div class="footer-socials">
-      <a href="mailto:rajkumarthirthala@gmail.com" class="fsocial" aria-label="email">✉️</a>
-      <a href="https://github.com/Rajvarma-hub" target="_blank" class="fsocial" aria-label="github">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-      </a>
-      <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="fsocial" aria-label="linkedin">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      </a>
+    <span class="footer-name">Thirthala Rajkumar</span>
+    <span class="footer-note">Designed &amp; built with precision · © 2026</span>
+    <div class="footer-links">
+      <a href="mailto:rajkumarthirthala@gmail.com">Email</a>
+      <a href="https://github.com/Rajvarma-hub" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank">LinkedIn</a>
     </div>
   </div>
 </footer>
 
-<script>
-// ── Navbar scroll ──
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => nav.classList.toggle('nav-scrolled', scrollY > 40));
-
-// ── Mobile drawer ──
-const ham = document.getElementById('hamburger');
-const drawer = document.getElementById('drawer');
-const overlay = document.getElementById('drawer-overlay');
-const closeBtn = document.getElementById('drawer-close');
-const openDrawer = () => { drawer.classList.add('open'); overlay.classList.add('show'); };
-const closeDrawer = () => { drawer.classList.remove('open'); overlay.classList.remove('show'); };
-ham.addEventListener('click', openDrawer);
-closeBtn.addEventListener('click', closeDrawer);
-overlay.addEventListener('click', closeDrawer);
-drawer.querySelectorAll('.drawer-link').forEach(l => l.addEventListener('click', closeDrawer));
-
-// ── Scroll reveal ──
-const revealEls = document.querySelectorAll('.reveal');
-const ro = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('in'), i * 80);
-      ro.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-revealEls.forEach(el => ro.observe(el));
-
-// ── Contact form ──
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const btn = this.querySelector('.btn-primary');
-  btn.textContent = '✓ Message Sent!';
-  btn.style.background = '#10b981';
-  setTimeout(() => {
-    btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    btn.style.background = '';
-    this.reset();
-  }, 3000);
-});
-
-// ── Active nav link ──
-const sections = document.querySelectorAll('section[id]');
-const navAs = document.querySelectorAll('.nav-list a');
-window.addEventListener('scroll', () => {
-  let cur = '';
-  sections.forEach(s => { if (scrollY >= s.offsetTop - 100) cur = s.id; });
-  navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
