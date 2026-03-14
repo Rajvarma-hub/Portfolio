@@ -3,166 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Thirthala Rajkumar – AI Engineer & Backend Developer specializing in LLMs, RAG, MCP Servers, FastAPI, and Cloud DevOps." />
-  <meta name="keywords" content="Thirthala Rajkumar, AI Engineer, Backend Developer, FastAPI, LLM, MCP, Python, Portfolio" />
-  <meta name="author" content="Thirthala Rajkumar" />
-  <meta property="og:title" content="Thirthala Rajkumar – AI Engineer & Developer" />
-  <meta property="og:description" content="Portfolio of Thirthala Rajkumar – AI, Backend, MLOps Developer." />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <title>Thirthala Rajkumar – AI Engineer & Developer</title>
+  <meta name="description" content="Thirthala Rajkumar – AI Engineer & Backend Developer Portfolio" />
+  <title>Thirthala Rajkumar · AI Engineer</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ========== NAVBAR ========== -->
-<nav id="navbar">
-  <div class="container nav-inner">
-    <span class="nav-logo">$ rajkumar.dev</span>
-    <ul class="nav-links">
+<!-- ░░ NAVBAR ░░ -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <a href="#" class="nav-brand">
+      <span class="brand-dot"></span>
+      rajkumar
+    </a>
+    <ul class="nav-list">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#github">GitHub</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="nav-right">
-      <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-close" id="mobile-close">✕</button>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#experience">Experience</a>
-  <a href="#github">GitHub</a>
-  <a href="#contact">Contact</a>
+<!-- Mobile Drawer -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="drawer-close">✕</button>
+  <a href="#about" class="drawer-link">About</a>
+  <a href="#skills" class="drawer-link">Skills</a>
+  <a href="#projects" class="drawer-link">Projects</a>
+  <a href="#experience" class="drawer-link">Experience</a>
+  <a href="#contact" class="drawer-link">Contact</a>
 </div>
+<div class="drawer-overlay" id="drawer-overlay"></div>
 
-<!-- ========== HERO ========== -->
+<!-- ░░ HERO ░░ -->
 <section id="hero">
-  <div class="hero-grid-bg"></div>
-  <div class="hero-glow"></div>
-  <div class="container hero-inner">
-    <div class="hero-text">
-      <div class="hero-status">
-        <span class="status-dot"></span>
-        Available for opportunities
+  <div class="hero-bg-lines"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container hero-container">
+    <div class="hero-left">
+      <div class="hero-chip">
+        <span class="chip-pulse"></span>
+        Open to Opportunities
       </div>
-      <h1 class="hero-name">
+
+      <h1 class="hero-title">
+        <span class="title-sub">Hello, I'm</span>
         Thirthala<br>
-        <span class="line-2">Rajkumar</span>
+        <em>Rajkumar</em>
       </h1>
-      <p class="hero-tagline">
-        <span id="typed" style="color:var(--accent)">AI Engineer</span>
-        <span class="tag-sep">/</span>
-        Backend Developer
-        <span class="tag-sep">/</span>
-        LLM Builder
+
+      <p class="hero-role">
+        AI Engineer <span class="role-sep">·</span>
+        Backend Developer <span class="role-sep">·</span>
+        LLM Architect
       </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View Projects →</a>
-        <a href="assets/Thirthala_Rajkumar_Resume.pdf" download class="btn btn-outline">⬇ Download Resume</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
+
+      <p class="hero-bio">
+        Building production-grade AI systems — from MCP servers and agentic pipelines
+        to scalable FastAPI backends deployed on AWS. I turn complex problems into
+        elegant, intelligent solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
       </div>
-    </div>
-    <div class="hero-photo-wrap">
-      <div class="hero-photo-frame">
-        <div class="photo-border"></div>
-        <div class="photo-inner">
-          <span class="photo-placeholder">👨‍💻</span>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">AI Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">150+</span>
+          <span class="stat-label">LeetCode</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">83%</span>
+          <span class="stat-label">B.Tech GPA</span>
         </div>
       </div>
-      <div class="hero-photo-badge">
-        <strong>83%</strong>
-        B.Tech CSE · LPU
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">
+            <span>TR</span>
+          </div>
+        </div>
+        <div class="hero-card-stack">
+          <div class="stack-tag">
+            <span class="tag-icon">⚡</span> FastAPI
+          </div>
+          <div class="stack-tag">
+            <span class="tag-icon">🤖</span> LangChain
+          </div>
+          <div class="stack-tag">
+            <span class="tag-icon">☁️</span> AWS
+          </div>
+          <div class="stack-tag">
+            <span class="tag-icon">🐳</span> Docker
+          </div>
+        </div>
+        <div class="hero-card-status">
+          <span class="status-led"></span>
+          <span>Currently at LPU · CSE</span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="scroll-hint">
+
+  <div class="scroll-cue">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
     <span>scroll</span>
-    <svg width="14" height="20" viewBox="0 0 14 20" fill="none">
-      <rect x="1" y="1" width="12" height="18" rx="6" stroke="currentColor" stroke-width="1.5"/>
-      <circle cx="7" cy="6" r="2" fill="currentColor"/>
-    </svg>
   </div>
 </section>
 
-<!-- ========== ABOUT ========== -->
+<!-- ░░ ABOUT ░░ -->
 <section id="about">
   <div class="container">
-    <p class="section-label reveal">About Me</p>
-    <h2 class="section-title reveal">Crafting Intelligent Systems,<br>
-      <span style="color:var(--text-muted);font-family:var(--font-serif);font-style:italic;font-weight:400">one layer at a time.</span>
-    </h2>
+    <div class="section-header reveal">
+      <span class="section-eyebrow">01 / About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+
     <div class="about-grid">
-      <div class="about-left reveal">
-        <p class="about-bio">
-          I'm <strong>Thirthala Rajkumar</strong>, a B.Tech CSE student at Lovely Professional University 
-          with a strong passion for building <strong>AI-powered backend systems</strong>. I specialize in designing 
-          LLM pipelines, MCP Servers, and scalable APIs that bring real intelligence to production applications.
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>Computer Science student at LPU</strong> with a deep focus on building
+          AI-powered backend systems. My expertise spans LLM pipelines, Agentic AI, MCP Servers,
+          and production-grade APIs.
         </p>
-        <p class="about-bio">
-          With hands-on experience in <strong>FastAPI, LangChain, Kafka, Docker, and AWS</strong>, I've built 
-          end-to-end platforms like an AI Expense Chatbot and an on-demand home services platform 
-          handling 100+ job events per minute. I thrive at the intersection of <strong>AI research and 
-          production engineering</strong>.
+        <p>
+          I've built platforms that handle <strong>100+ Kafka events per minute</strong>, AI agents that
+          perform 10+ financial tasks end-to-end through conversation, and containerized systems
+          deployed on AWS with real-time WebSocket sync.
         </p>
-        <div class="about-highlight">
-          <span class="icon">🎯</span>
-          <span>
-            <strong>Career Goal</strong>
-            Build production-grade AI systems at scale, contributing to the next generation of Agentic AI tools.
-          </span>
-        </div>
-        <div class="about-highlight">
-          <span class="icon">📍</span>
-          <span>
-            <strong>Location</strong>
-            Phagwara, Punjab, India · Open to Remote / Relocation
-          </span>
-        </div>
-        <div class="about-highlight">
-          <span class="icon">🔢</span>
-          <span>
-            <strong>LeetCode</strong>
-            150+ problems solved across DSA topics
-          </span>
+        <p>
+          I believe the best engineers ship products, not just code. Every project I build
+          is designed for scale, maintainability, and real-world impact.
+        </p>
+        <div class="about-links">
+          <a href="mailto:rajkumarthirthala@gmail.com" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+            rajkumarthirthala@gmail.com
+          </a>
+          <a href="https://github.com/Rajvarma-hub" target="_blank" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            Rajvarma-hub
+          </a>
+          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="about-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            thirthala-rajkumar
+          </a>
         </div>
       </div>
-      <div class="about-right">
-        <p class="section-label reveal" style="margin-bottom:20px">Education</p>
-        <div class="edu-card reveal">
-          <div class="edu-inst">🎓 Lovely Professional University</div>
-          <div class="edu-degree">B.Tech – Computer Science & Engineering</div>
-          <div class="edu-meta">
-            <span class="edu-score">83%</span>
-            <span class="edu-year">Aug 2024 – Present</span>
+
+      <div class="about-edu reveal">
+        <h3 class="edu-heading">Education</h3>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-degree">B.Tech — Computer Science & Engineering</div>
+              <div class="edu-school">Lovely Professional University, Phagwara</div>
+              <div class="edu-meta">
+                <span class="edu-score">83%</span>
+                <span>Aug 2024 – Present</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="edu-card reveal">
-          <div class="edu-inst">📘 Abul Kalam Institute of Technological Sciences</div>
-          <div class="edu-degree">Diploma – Computer Science & Engineering</div>
-          <div class="edu-meta">
-            <span class="edu-score">91%</span>
-            <span class="edu-year">Jun 2021 – May 2024</span>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-degree">Diploma — Computer Science & Engineering</div>
+              <div class="edu-school">Abul Kalam Institute of Technological Sciences</div>
+              <div class="edu-meta">
+                <span class="edu-score">91%</span>
+                <span>Jun 2021 – May 2024</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="edu-card reveal">
-          <div class="edu-inst">🏫 ZPHS (Boys), Peddapalli</div>
-          <div class="edu-degree">High School</div>
-          <div class="edu-meta">
-            <span class="edu-score">95%</span>
-            <span class="edu-year">Jun 2020 – Apr 2021</span>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-content">
+              <div class="edu-degree">High School</div>
+              <div class="edu-school">ZPHS (Boys), Peddapalli, Telangana</div>
+              <div class="edu-meta">
+                <span class="edu-score">95%</span>
+                <span>Jun 2020 – Apr 2021</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -170,433 +225,406 @@
   </div>
 </section>
 
-<!-- ========== SKILLS ========== -->
+<!-- ░░ SKILLS ░░ -->
 <section id="skills">
   <div class="container">
-    <p class="section-label reveal">Technical Skills</p>
-    <h2 class="section-title reveal">What I Work With</h2>
+    <div class="section-header reveal">
+      <span class="section-eyebrow">02 / Skills</span>
+      <h2 class="section-title">Tech Stack</h2>
+    </div>
+
     <div class="skills-grid">
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent)">
-        <div class="skill-card-header">
-          <div class="skill-icon">⌨️</div>
-          <div>
-            <div class="skill-card-title">Programming Languages</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C++</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">SQL</span>
+      <div class="skill-card reveal" style="--accent-clr: #f59e0b">
+        <div class="skill-card-icon">⌨️</div>
+        <h3 class="skill-card-title">Languages</h3>
+        <div class="skill-pills">
+          <span class="pill">Python</span>
+          <span class="pill">C++</span>
+          <span class="pill">Java</span>
+          <span class="pill">SQL</span>
         </div>
       </div>
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent-2)">
-        <div class="skill-card-header">
-          <div class="skill-icon" style="background:rgba(167,139,250,0.1)">🤖</div>
-          <div>
-            <div class="skill-card-title">AI & Data Science</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">Keras</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
-          <span class="skill-tag">Power BI</span>
+      <div class="skill-card reveal" style="--accent-clr: #8b5cf6">
+        <div class="skill-card-icon">🤖</div>
+        <h3 class="skill-card-title">AI & ML</h3>
+        <div class="skill-pills">
+          <span class="pill">TensorFlow</span>
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">LangChain</span>
+          <span class="pill">RAG</span>
+          <span class="pill">LLMs</span>
+          <span class="pill">CNNs</span>
+          <span class="pill">NLP</span>
         </div>
       </div>
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent-3)">
-        <div class="skill-card-header">
-          <div class="skill-icon" style="background:rgba(244,114,182,0.1)">🧠</div>
-          <div>
-            <div class="skill-card-title">ML & Deep Learning</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">Neural Networks</span>
-          <span class="skill-tag">CNNs</span>
-          <span class="skill-tag">NLP</span>
-          <span class="skill-tag">LLMs</span>
-          <span class="skill-tag">RAG</span>
-          <span class="skill-tag">Agentic AI</span>
-          <span class="skill-tag">MCP Servers</span>
-          <span class="skill-tag">LangChain</span>
+      <div class="skill-card reveal" style="--accent-clr: #10b981">
+        <div class="skill-card-icon">⚡</div>
+        <h3 class="skill-card-title">Backend</h3>
+        <div class="skill-pills">
+          <span class="pill">FastAPI</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Kafka</span>
+          <span class="pill">Redis</span>
+          <span class="pill">WebSockets</span>
+          <span class="pill">OAuth2</span>
+          <span class="pill">JWT</span>
         </div>
       </div>
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent-warm)">
-        <div class="skill-card-header">
-          <div class="skill-icon" style="background:rgba(251,146,60,0.1)">⚡</div>
-          <div>
-            <div class="skill-card-title">Backend & Web</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">FastAPI</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">Kafka</span>
-          <span class="skill-tag">Redis</span>
-          <span class="skill-tag">WebSockets</span>
-          <span class="skill-tag">OAuth2</span>
-          <span class="skill-tag">JWT</span>
-          <span class="skill-tag">SQLAlchemy</span>
-          <span class="skill-tag">PySpark</span>
+      <div class="skill-card reveal" style="--accent-clr: #f472b6">
+        <div class="skill-card-icon">🧠</div>
+        <h3 class="skill-card-title">Agentic AI</h3>
+        <div class="skill-pills">
+          <span class="pill">MCP Servers</span>
+          <span class="pill">Agentic AI</span>
+          <span class="pill">Tool Use</span>
+          <span class="pill">Gemini 2.5</span>
+          <span class="pill">Memory Pipelines</span>
         </div>
       </div>
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent)">
-        <div class="skill-card-header">
-          <div class="skill-icon">☁️</div>
-          <div>
-            <div class="skill-card-title">Cloud & DevOps</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">AWS EC2</span>
-          <span class="skill-tag">AWS S3</span>
-          <span class="skill-tag">AWS RDS</span>
-          <span class="skill-tag">AWS IAM</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">MLflow</span>
-          <span class="skill-tag">ZenML</span>
-          <span class="skill-tag">Linux</span>
+      <div class="skill-card reveal" style="--accent-clr: #38bdf8">
+        <div class="skill-card-icon">☁️</div>
+        <h3 class="skill-card-title">Cloud & DevOps</h3>
+        <div class="skill-pills">
+          <span class="pill">AWS EC2</span>
+          <span class="pill">AWS S3</span>
+          <span class="pill">AWS RDS</span>
+          <span class="pill">Docker</span>
+          <span class="pill">MLflow</span>
+          <span class="pill">ZenML</span>
+          <span class="pill">Linux</span>
         </div>
       </div>
-
-      <div class="skill-card reveal" style="--card-accent:var(--accent-2)">
-        <div class="skill-card-header">
-          <div class="skill-icon" style="background:rgba(167,139,250,0.1)">🔧</div>
-          <div>
-            <div class="skill-card-title">Software Engineering</div>
-          </div>
-        </div>
-        <div class="skill-tags">
-          <span class="skill-tag">DSA</span>
-          <span class="skill-tag">OOP</span>
-          <span class="skill-tag">Operating Systems</span>
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Microservices</span>
+      <div class="skill-card reveal" style="--accent-clr: #fb923c">
+        <div class="skill-card-icon">📊</div>
+        <h3 class="skill-card-title">Data Science</h3>
+        <div class="skill-pills">
+          <span class="pill">NumPy</span>
+          <span class="pill">Pandas</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Seaborn</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">PySpark</span>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ========== PROJECTS ========== -->
+<!-- ░░ PROJECTS ░░ -->
 <section id="projects">
   <div class="container">
-    <p class="section-label reveal">Featured Work</p>
-    <h2 class="section-title reveal">Projects That Ship</h2>
+    <div class="section-header reveal">
+      <span class="section-eyebrow">03 / Projects</span>
+      <h2 class="section-title">Featured Work</h2>
+    </div>
+
     <div class="projects-grid">
 
-      <div class="project-card reveal" style="--card-color-a:#6ee7b7;--card-color-b:#3b82f6">
-        <div class="project-img">🏠</div>
-        <div class="project-body">
-          <div class="project-tag-row">
-            <span class="project-tech">FastAPI</span>
-            <span class="project-tech">Kafka</span>
-            <span class="project-tech">Docker</span>
-            <span class="project-tech">AWS</span>
-            <span class="project-tech">MCP</span>
-          </div>
-          <h3 class="project-title">FixEasy – On-Demand Home Services</h3>
-          <p class="project-desc">
-            A production-grade backend platform with 3 roles (customer, worker, admin) and 25+ REST APIs. 
-            Event-driven architecture via Kafka processes 100+ job events/min. Includes a custom MCP server 
-            with an AI agent for natural language job management, WebSocket sync, and AWS deployment.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" rel="noopener" class="proj-link proj-link-gh">
-              ⌥ GitHub
+      <!-- Project 1 -->
+      <article class="project-card reveal project-featured">
+        <div class="project-card-top">
+          <div class="project-number">01</div>
+          <div class="project-links-top">
+            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="icon-btn" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
-            <a href="#" class="proj-link proj-link-live">↗ Live Demo</a>
+            <a href="#" class="icon-btn" title="Live Demo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </div>
         </div>
-      </div>
+        <div class="project-emoji">🏠</div>
+        <h3 class="project-title">FixEasy</h3>
+        <p class="project-subtitle">On-Demand Home Services Platform</p>
+        <p class="project-desc">
+          Production FastAPI backend with 3 roles & 25+ REST APIs. Event-driven via Kafka processing
+          100+ job events/min. Custom MCP server with AI agent for natural language job management.
+          WebSocket real-time sync + Redis OTP + AWS deployment.
+        </p>
+        <div class="project-metrics">
+          <span class="metric"><strong>100+</strong> events/min</span>
+          <span class="metric"><strong>25+</strong> REST APIs</span>
+          <span class="metric"><strong>3</strong> user roles</span>
+        </div>
+        <div class="project-tech">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">Kafka</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Redis</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">AWS</span>
+          <span class="tech-badge">MCP</span>
+        </div>
+      </article>
 
-      <div class="project-card reveal" style="--card-color-a:#a78bfa;--card-color-b:#f472b6">
-        <div class="project-img">💰</div>
-        <div class="project-body">
-          <div class="project-tag-row">
-            <span class="project-tech">LangChain</span>
-            <span class="project-tech">Gemini 2.5</span>
-            <span class="project-tech">FastAPI</span>
-            <span class="project-tech">PostgreSQL</span>
-            <span class="project-tech">MCP</span>
-          </div>
-          <h3 class="project-title">AI Expense Management Chatbot</h3>
-          <p class="project-desc">
-            An AI-driven expense platform supporting 1,000+ records per user via a chat interface. 
-            Custom MCP server orchestrates LLM context, memory and 10+ financial tasks. 
-            Sub-300ms response times with contextual memory pipelines and personalized insights.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" rel="noopener" class="proj-link proj-link-gh">
-              ⌥ GitHub
+      <!-- Project 2 -->
+      <article class="project-card reveal project-featured">
+        <div class="project-card-top">
+          <div class="project-number">02</div>
+          <div class="project-links-top">
+            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" class="icon-btn" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </a>
-            <a href="#" class="proj-link proj-link-live">↗ Live Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card reveal" style="--card-color-a:#fb923c;--card-color-b:#6ee7b7">
-        <div class="project-img">📊</div>
-        <div class="project-body">
-          <div class="project-tag-row">
-            <span class="project-tech">Python</span>
-            <span class="project-tech">Pandas</span>
-            <span class="project-tech">Matplotlib</span>
-            <span class="project-tech">Excel</span>
-          </div>
-          <h3 class="project-title">Sustainability Data Analytics</h3>
-          <p class="project-desc">
-            Applied ML and data analysis to solve sustainability-related problems during AICTE virtual internship.
-            Cleaned, processed and visualized datasets, producing data-driven reports and recommendations.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/Rajvarma-hub/Projects" target="_blank" rel="noopener" class="proj-link proj-link-gh">
-              ⌥ GitHub
+            <a href="#" class="icon-btn" title="Live Demo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
-      </div>
+        <div class="project-emoji">💰</div>
+        <h3 class="project-title">AI Expense Chatbot</h3>
+        <p class="project-subtitle">Conversational Finance Management</p>
+        <p class="project-desc">
+          AI-driven expense platform supporting 1,000+ records via chat. Custom MCP server
+          orchestrates LLM context, memory & 10+ financial tasks. LangChain + Gemini 2.5 Flash
+          with sub-300ms responses and personalized financial insights.
+        </p>
+        <div class="project-metrics">
+          <span class="metric"><strong>1,000+</strong> records/user</span>
+          <span class="metric"><strong>&lt;300ms</strong> response</span>
+          <span class="metric"><strong>10+</strong> AI tasks</span>
+        </div>
+        <div class="project-tech">
+          <span class="tech-badge">LangChain</span>
+          <span class="tech-badge">Gemini 2.5</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">MCP</span>
+          <span class="tech-badge">OAuth2</span>
+        </div>
+      </article>
 
     </div>
   </div>
 </section>
 
-<!-- ========== EXPERIENCE ========== -->
+<!-- ░░ EXPERIENCE ░░ -->
 <section id="experience">
   <div class="container">
-    <p class="section-label reveal">Background</p>
-    <h2 class="section-title reveal">Experience & Achievements</h2>
-    <div class="exp-grid">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">04 / Experience</span>
+      <h2 class="section-title">Background</h2>
+    </div>
 
-      <div class="exp-card reveal">
-        <div class="exp-card-header">
-          <div>
-            <span class="exp-badge badge-intern">Internship</span>
-          </div>
-          <span class="exp-icon">🏢</span>
-        </div>
-        <div class="exp-title">AICTE Virtual Internship</div>
-        <div class="exp-subtitle">Artificial Intelligence & Data Analytics</div>
+    <div class="exp-layout">
+      <!-- Internship -->
+      <div class="exp-card reveal exp-primary">
+        <div class="exp-badge internship">Internship</div>
+        <div class="exp-card-icon">🏢</div>
+        <h3 class="exp-title">AICTE Virtual Internship</h3>
+        <div class="exp-org">Artificial Intelligence & Data Analytics</div>
         <div class="exp-date">Apr 2025</div>
-        <p class="exp-desc">
-          Applied basic ML and data analysis with Python on sustainability problems. 
-          Cleaned and visualized datasets using Pandas, NumPy, Matplotlib. Prepared Excel reports with 
-          data-driven recommendations.
-        </p>
+        <p class="exp-desc">Applied ML and data analysis using Python on sustainability problems. Processed datasets with Pandas, NumPy and Matplotlib. Produced Excel reports with data-driven recommendations.</p>
+        <div class="exp-tech">
+          <span class="pill-sm">Python</span>
+          <span class="pill-sm">Pandas</span>
+          <span class="pill-sm">NumPy</span>
+          <span class="pill-sm">Matplotlib</span>
+          <span class="pill-sm">Excel</span>
+        </div>
       </div>
 
+      <!-- Certs -->
       <div class="exp-card reveal">
-        <div class="exp-card-header">
-          <div>
-            <span class="exp-badge badge-cert">Certifications</span>
-          </div>
-          <span class="exp-icon">📜</span>
-        </div>
+        <div class="exp-badge certifications">Certifications</div>
+        <div class="exp-card-icon">📜</div>
+        <h3 class="exp-title">Certifications</h3>
         <ul class="cert-list">
           <li>
+            <span class="cert-dot"></span>
             <div>
-              <div style="color:var(--text);font-weight:600;font-size:0.85rem">Privacy & Security in Online Social Media</div>
-              <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim)">NPTEL · Nov 2025</div>
+              <strong>Privacy & Security in Online Social Media</strong>
+              <span class="cert-org">NPTEL · Nov 2025</span>
             </div>
           </li>
           <li>
+            <span class="cert-dot"></span>
             <div>
-              <div style="color:var(--text);font-weight:600;font-size:0.85rem">Deep Learning Course Training</div>
-              <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim)">Scaler · Sep 2025</div>
+              <strong>Deep Learning Course Training</strong>
+              <span class="cert-org">Scaler · Sep 2025</span>
             </div>
           </li>
           <li>
+            <span class="cert-dot"></span>
             <div>
-              <div style="color:var(--text);font-weight:600;font-size:0.85rem">AI-Powered NLP & LLM Training</div>
-              <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim)">AlgoTutor Academy · Aug 2025</div>
+              <strong>AI-Powered NLP & LLM Training</strong>
+              <span class="cert-org">AlgoTutor Academy · Aug 2025</span>
             </div>
           </li>
           <li>
+            <span class="cert-dot"></span>
             <div>
-              <div style="color:var(--text);font-weight:600;font-size:0.85rem">Java Programming</div>
-              <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-dim)">LPU · Jan–May 2025</div>
+              <strong>Java Programming</strong>
+              <span class="cert-org">LPU · Jan–May 2025</span>
             </div>
           </li>
         </ul>
       </div>
 
+      <!-- Achievements -->
       <div class="exp-card reveal">
-        <div class="exp-card-header">
-          <div>
-            <span class="exp-badge badge-award">Competitive Coding</span>
-          </div>
-          <span class="exp-icon">⚡</span>
-        </div>
-        <div class="exp-title">LeetCode Practitioner</div>
-        <div class="exp-subtitle">Algorithms & Data Structures</div>
+        <div class="exp-badge achievement">Achievement</div>
+        <div class="exp-card-icon">🏆</div>
+        <h3 class="exp-title">Competitive Coding</h3>
         <div class="exp-date">Dec 2025</div>
-        <p class="exp-desc">
-          Solved <strong style="color:var(--accent)">150+ problems</strong> across LeetCode spanning arrays, 
-          trees, dynamic programming, graphs, and system design patterns. Consistent daily problem solving routine.
-        </p>
-      </div>
-
-      <div class="exp-card reveal">
-        <div class="exp-card-header">
-          <div>
-            <span class="exp-badge badge-achieve">Academics</span>
-          </div>
-          <span class="exp-icon">🎓</span>
+        <p class="exp-desc">Consistently solving DSA problems to sharpen algorithmic thinking.</p>
+        <div class="achieve-stat">
+          <span class="achieve-num">150+</span>
+          <span class="achieve-label">LeetCode Problems Solved</span>
         </div>
-        <div class="exp-title">Academic Excellence</div>
-        <div class="exp-subtitle">Consistent Top Performer</div>
-        <p class="exp-desc">
-          Maintained <strong style="color:var(--accent)">95% in High School</strong>, 
-          <strong style="color:var(--accent)">91% in Diploma</strong>, and 
-          <strong style="color:var(--accent)">83% in B.Tech</strong> — demonstrating 
-          consistent dedication to technical excellence across all academic levels.
-        </p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ========== GITHUB ========== -->
-<section id="github">
-  <div class="container">
-    <p class="section-label reveal">Open Source</p>
-    <h2 class="section-title reveal">GitHub Activity</h2>
-    <div class="github-inner">
-      <div class="github-card reveal">
-        <img
-          class="github-stat-img"
-          src="https://github-readme-stats.vercel.app/api?username=Rajvarma-hub&show_icons=true&theme=dark&bg_color=1c1c25&border_color=ffffff15&title_color=6ee7b7&icon_color=6ee7b7&text_color=8888a0&hide_border=false"
-          alt="GitHub Stats"
-          loading="lazy"
-        />
-      </div>
-      <div class="github-card reveal">
-        <img
-          class="github-stat-img"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajvarma-hub&layout=compact&theme=dark&bg_color=1c1c25&border_color=ffffff15&title_color=6ee7b7&text_color=8888a0"
-          alt="Top Languages"
-          loading="lazy"
-        />
-      </div>
-    </div>
-    <div class="github-card reveal" style="margin-top:24px;overflow:hidden;border-radius:var(--radius-lg)">
-      <img
-        src="https://ghchart.rshah.org/6ee7b7/Rajvarma-hub"
-        alt="GitHub Contributions Chart"
-        loading="lazy"
-        style="width:100%;padding:24px;background:var(--surface)"
-        class="github-stat-img"
-      />
-    </div>
-    <a href="https://github.com/Rajvarma-hub" target="_blank" rel="noopener" class="github-profile-link reveal">
-      <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
-      View Full GitHub Profile — Rajvarma-hub
-    </a>
-  </div>
-</section>
-
-<!-- ========== CONTACT ========== -->
+<!-- ░░ CONTACT ░░ -->
 <section id="contact">
   <div class="container">
-    <p class="section-label reveal">Get In Touch</p>
-    <h2 class="section-title reveal">Let's Build Something<br>
-      <span style="color:var(--text-muted);font-family:var(--font-serif);font-style:italic;font-weight:400">Together.</span>
-    </h2>
-    <div class="contact-grid">
-      <div class="contact-info reveal">
-        <p>
-          I'm actively looking for internships, full-time roles, and collaboration opportunities 
-          in AI engineering and backend development. Whether you have a project idea or just want 
-          to connect — my inbox is always open.
+    <div class="section-header reveal">
+      <span class="section-eyebrow">05 / Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+
+    <div class="contact-layout reveal">
+      <div class="contact-left">
+        <p class="contact-intro">
+          I'm actively seeking internships and full-time roles in AI engineering and backend development.
+          Have a project, an opportunity, or just want to say hi? My inbox is always open.
         </p>
-        <div class="contact-links">
-          <a href="mailto:rajkumarthirthala@gmail.com" class="contact-link">
-            <div class="contact-link-icon">✉️</div>
-            <div class="contact-link-text">
-              <div class="contact-link-label">Email</div>
-              <div class="contact-link-value">rajkumarthirthala@gmail.com</div>
+
+        <div class="contact-cards">
+          <a href="mailto:rajkumarthirthala@gmail.com" class="contact-card">
+            <div class="cc-icon">✉️</div>
+            <div class="cc-text">
+              <span class="cc-label">Email</span>
+              <span class="cc-value">rajkumarthirthala@gmail.com</span>
             </div>
+            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://www.linkedin.com/in/thirthala-rajkumar" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-icon">💼</div>
-            <div class="contact-link-text">
-              <div class="contact-link-label">LinkedIn</div>
-              <div class="contact-link-value">thirthala-rajkumar</div>
+          <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="contact-card">
+            <div class="cc-icon">💼</div>
+            <div class="cc-text">
+              <span class="cc-label">LinkedIn</span>
+              <span class="cc-value">thirthala-rajkumar</span>
             </div>
+            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="https://github.com/Rajvarma-hub" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-icon">
-              <svg height="18" width="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+          <a href="https://github.com/Rajvarma-hub" target="_blank" class="contact-card">
+            <div class="cc-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
             </div>
-            <div class="contact-link-text">
-              <div class="contact-link-label">GitHub</div>
-              <div class="contact-link-value">Rajvarma-hub</div>
+            <div class="cc-text">
+              <span class="cc-label">GitHub</span>
+              <span class="cc-value">Rajvarma-hub</span>
             </div>
+            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
-          <a href="tel:+916301597150" class="contact-link">
-            <div class="contact-link-icon">📱</div>
-            <div class="contact-link-text">
-              <div class="contact-link-label">Mobile</div>
-              <div class="contact-link-value">+91 6301597150</div>
+          <a href="tel:+916301597150" class="contact-card">
+            <div class="cc-icon">📱</div>
+            <div class="cc-text">
+              <span class="cc-label">Phone</span>
+              <span class="cc-value">+91 6301597150</span>
             </div>
+            <svg class="cc-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </div>
-      <form class="contact-form reveal" id="contact-form">
+
+      <form class="contact-form" id="contact-form">
         <div class="form-row">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+          <div class="form-field">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your name" required />
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <div class="form-field">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="you@email.com" required />
           </div>
         </div>
-        <div class="form-group">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+        <div class="form-field">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" name="subject" placeholder="What's this about?" />
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+        <div class="form-field">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
         </div>
-        <button type="submit" class="btn-submit">Send Message →</button>
+        <button type="submit" class="btn btn-primary btn-full">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ========== FOOTER ========== -->
+<!-- ░░ FOOTER ░░ -->
 <footer>
   <div class="container footer-inner">
-    <p class="footer-copy">
-      © 2026 <span>Thirthala Rajkumar</span>. Built with ❤️ and raw HTML/CSS/JS.
-    </p>
+    <span class="footer-brand">Thirthala Rajkumar</span>
+    <span class="footer-copy">© 2026 · Built with pure HTML & CSS</span>
     <div class="footer-socials">
-      <a href="mailto:rajkumarthirthala@gmail.com" class="social-btn" aria-label="Email">✉️</a>
-      <a href="https://www.linkedin.com/in/thirthala-rajkumar" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">💼</a>
-      <a href="https://github.com/Rajvarma-hub" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
-        <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      <a href="mailto:rajkumarthirthala@gmail.com" class="fsocial" aria-label="email">✉️</a>
+      <a href="https://github.com/Rajvarma-hub" target="_blank" class="fsocial" aria-label="github">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/thirthala-rajkumar" target="_blank" class="fsocial" aria-label="linkedin">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script>
+// ── Navbar scroll ──
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('nav-scrolled', scrollY > 40));
+
+// ── Mobile drawer ──
+const ham = document.getElementById('hamburger');
+const drawer = document.getElementById('drawer');
+const overlay = document.getElementById('drawer-overlay');
+const closeBtn = document.getElementById('drawer-close');
+const openDrawer = () => { drawer.classList.add('open'); overlay.classList.add('show'); };
+const closeDrawer = () => { drawer.classList.remove('open'); overlay.classList.remove('show'); };
+ham.addEventListener('click', openDrawer);
+closeBtn.addEventListener('click', closeDrawer);
+overlay.addEventListener('click', closeDrawer);
+drawer.querySelectorAll('.drawer-link').forEach(l => l.addEventListener('click', closeDrawer));
+
+// ── Scroll reveal ──
+const revealEls = document.querySelectorAll('.reveal');
+const ro = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('in'), i * 80);
+      ro.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+revealEls.forEach(el => ro.observe(el));
+
+// ── Contact form ──
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = this.querySelector('.btn-primary');
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = '#10b981';
+  setTimeout(() => {
+    btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+    btn.style.background = '';
+    this.reset();
+  }, 3000);
+});
+
+// ── Active nav link ──
+const sections = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('.nav-list a');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (scrollY >= s.offsetTop - 100) cur = s.id; });
+  navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+});
+</script>
 </body>
 </html>
