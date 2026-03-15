@@ -1,0 +1,74 @@
+
+
+AICTE Virtual Internship – Artificial Intelligence & Data Analytics | 
+Apr’ 2025 
+THIRTHALA RAJKUMAR 
+LinkedIn:  https://www.linkedin.com/in/thirthala-rajkumar Email: rajkumarthirthala@gmail.com 
+Github:  https://github.com/Rajvarma-hub/Projects                                                                         Mobile:+91-6301597150 
+SKILLS  
+• Languages: Python, C++, Java, SQL 
+• AI & Data Science: NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Keras, 
+Power BI, Excel 
+• Machine Learning & Deep Learning: Supervised & Unsupervised Learning, Neural Networks, CNNs, NLP, 
+LLMs, RAG, Agentic AI , MCP Servers 
+• Big Data & Backend Tools: PySpark, Kafka, PostgreSQL, MySQL, FastAPI, SQLAlchemy,Web Sockets 
+• Cloud & MLOps: AWS (IAM, EC2, VPC, RDS, S3, CloudWatch), Docker, MLflow, ZenML 
+• Software Engineering: Data Structures & Algorithms, Object-Oriented Programming (OOP), Operating 
+Systems, Linux 
+• Soft Skills: Problem-Solving, Team-Player,  Continuous Learning,Versatile 
+ INTERNSHIP 
+ 
+• Applied basic machine learning and data analysis techniques using Python to solve sustainability-related 
+problems. 
+• Cleaned, processed, and visualized datasets using Pandas, NumPy, and Matplotlib for insights. 
+• Prepared reports and summaries in Excel to present findings and highlight data-driven recommendations. 
+Tech stacks used: Python , Pandas , NumPy , Matplotlib , Excel 
+ PROJECTS 
+FixEasy – On-Demand Home Services Platform (Backend) |                                                                   Jan’ 2026 
+• Architected a FastAPI-based backend with 3 distinct roles (customer, worker, admin) and 25+ REST APIs, 
+supporting concurrent service requests and job workflows. 
+• Designed an event-driven architecture using Kafka, processing 100+ job events per minute to decouple service 
+request creation from worker notification and assignment. 
+• Developed a custom MCP server and embedded an AI agent that enables users and admins to create, track, 
+cancel, and query jobs through a chat interface using natural language. 
+• Implemented real-time job state synchronization via WebSockets and Redis-based OTP verification, and 
+deployed the containerized system on AWS (EC2, RDS, S3, IAM, VPC) using Docker. 
+Tech Stack: Python, FastAPI, PostgreSQL, Kafka, Redis, WebSockets, OAuth2, JWT, Docker, AWS 
+AI Expense Management Chatbot |    Nov’ 2025. 
+• Built an AI-driven expense management system allowing users to log, edit, query, and analyze 
+expenses via chat, handling 1,000+ expense records per user efficiently. 
+• Developed a custom MCP (Model Context Protocol) server to orchestrate LLM context, memory, 
+and tool invocation, embedding an AI agent capable of performing 10+ financial tasks end-to-end 
+through conversation. 
+• Integrated LangChain with Gemini 2.5 Flash, implementing OAuth2 + JWT authentication and 
+optimizing PostgreSQL queries for secure and low-latency data access. 
+• Designed scalable FastAPI REST APIs and contextual memory pipelines to analyze spending 
+behavior and generate personalized financial insights with sub-300 ms response times. 
+Tech stacks used: Python, FastAPI, LangChain, Gemini 2.5 Flash, PostgreSQL, OAuth2, Jwt 
+CERTIFICATES 
+• Privacy and Security in Online Social Media – NPTEL |   Nov ‘ 2025 
+• Deep Learning Course Training – Scaler |    Sep’ 2025 
+• AI-Powered NLP and LLM Training – AlgoTutor Acadamy |     Aug’ 2025 
+• Java –  LPU |                                                                                                                                 Jan’2025 – May’2025 
+  ACHIEVEMENT 
+           Competitive & Coding Achievements                                                                                                         Dec ‘2025                                                                                           
+• Solved 150+ problems across LeetCode, platform. |  
+ EDUCATION 
+   Lovely Professional University Phagwara Punjab 
+          Bachelor of Technology - Computer Science and Engineering; Percentage: 83  Since Aug 2024 
+     Abul Kalam Institute of Technological Sciences Kothagudem, Telangana 
+          Diploma – Computer Science and Engineering Percentage: 91   Jun’ 2021- May’ 2024 
+      ZPHS(BOYS)  Peddapalli,Telangana 
+          High School   Percentage:95                                                                                              Jun’ 2020- Apr’ 2021 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
