@@ -1,4 +1,4 @@
-/** @type {import {  } from "module";('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -6,14 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-
-  // GitHub Pages deployment configuration
   output: 'export',
-
-  // Required because your repo name is "Portfolio"
-  basePath: '/Portfolio',
-  assetPrefix: '/Portfolio/',
-
+  basePath: "/Portfolio",
+  assetPrefix: "/Portfolio/",
   trailingSlash: true,
 }
 
