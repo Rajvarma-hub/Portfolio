@@ -7,6 +7,10 @@ import Image from "next/image"
 
 const roles = ["AI Engineer", "Backend Developer", "ML Specialist", "Cloud Architect"]
 
+// IMPORTANT: Set this to your GitHub repository name for GitHub Pages deployment
+// If your repo is "username.github.io", set basePath = ""
+const basePath = "/Portfolio"
+
 export function HeroSection() {
   const [currentRole, setCurrentRole] = useState(0)
   const [isVisible, setIsVisible] = useState(false)
@@ -118,7 +122,7 @@ export function HeroSection() {
                 className="border-border hover:bg-secondary/80 px-6 md:px-8 py-5 md:py-6 text-sm md:text-base backdrop-blur-sm group"
               >
                 <a
-                  href="/assets/Thirthala_Rajkumar_Resume.pdf"
+                  href={`${basePath}/assets/Thirthala_Rajkumar_Resume.pdf`}
                   download="Thirthala_Rajkumar_Resume.pdf"
                 >
                   <FileText className="mr-2 h-4 w-4 md:h-5 md:w-5 group-hover:scale-110 transition-transform" />
@@ -196,7 +200,7 @@ export function HeroSection() {
                   
                   {/* Portrait Image with Zoom */}
                   <Image
-                    src="/images/portrait.png"
+                    src={`${basePath}/images/portrait.png`}
                     alt="Thirthala Rajkumar - AI Engineer & Backend Developer"
                     fill
                     priority
